@@ -16,43 +16,43 @@ This project provides a normalized database schema and set of analytical SQL que
 ## 🗄️ Database Schema & Entities
 
 The relational model consists of the following tables:
-* `GUEST` (ID, Fname, Lname, Phone, Email)[cite: 1]
-* `BOOKING` (ID, Check_in, Check_out, Amount, Guest_ID)[cite: 1]
-* `ROOM` (Number, Type, Price, Status, Booking_ID)[cite: 1]
-* `SERVICE` (ID, Name, Cost)[cite: 1]
-* `REQUEST` (Booking_ID, Serv_ID) — *Composite Primary Key*[cite: 1]
+* `GUEST` (ID, Fname, Lname, Phone, Email)
+* `BOOKING` (ID, Check_in, Check_out, Amount, Guest_ID)
+* `ROOM` (Number, Type, Price, Status, Booking_ID)
+* `SERVICE` (ID, Name, Cost)
+* `REQUEST` (Booking_ID, Serv_ID) — *Composite Primary Key*
 
 ---
 
 ## 💻 SQL Features Included
-* **DDL (Data Definition Language):** Table creation with `PRIMARY KEY`, `FOREIGN KEY`, `DEFAULT`, and `CHECK` constraints[cite: 1].
-* **DML (Data Manipulation Language):** Sample data insertions for guests, rooms, bookings, and service requests[cite: 1].
+* **DDL (Data Definition Language):** Table creation with `PRIMARY KEY`, `FOREIGN KEY`, `DEFAULT`, and `CHECK` constraints.
+* **DML (Data Manipulation Language):** Sample data insertions for guests, rooms, bookings, and service requests.
 * **DQL (Queries & Analytics):**
-  * `JOIN` queries connecting guests to their respective booking records[cite: 1].
-  * Aggregation functions (`COUNT`, `SUM`) to track booked room metrics and revenue[cite: 1].
-  * Subqueries filtering guest bookings[cite: 1].
-  * Database `VIEW` creation (`Available_Rooms`) for fast status reporting[cite: 1].
+  * `JOIN` queries connecting guests to their respective booking records.
+  * Aggregation functions (`COUNT`, `SUM`) to track booked room metrics and revenue.
+  * Subqueries filtering guest bookings.
+  * Database `VIEW` creation (`Available_Rooms`) for fast status reporting.
 
 ---
 
 ## 🚀 How to Run the Script
 
 1. Open **MySQL Workbench** or your preferred MySQL client.
-2. Execute the `HotelManagementSystemfinal.sql` file[cite: 1]:
+2. Execute the `HotelManagementSystemfinal.sql` file:
    ```sql
    SOURCE path/to/HotelManagementSystemfinal.sql;
 
-Verify table creation and data seeding:
-USE HotelManagementSystem;
-SHOW TABLES;
+## 👥 Team Contributions
 
-👥 Project Team & Contributors
-Developed by Section 2 Team[cite: 1]:
-
-Shamayil Khoj (ID: 44610372)[cite: 1]
-
-Riham Wan-Deraman (ID: 446017138)[cite: 1]
-
-Lian Alanazi (ID: 446009851)[cite: 1]
-
-Shahad Shareefy (ID: 446003547)[cite: 1]
+* **[Riham Wan-Deraman](https://github.com/RehamsCloud) (Team Leader & Developer):**
+  * Designed tables and relationships for services and requests (`SERVICE`, `REQUEST`).
+  * Implemented database aggregate queries (`COUNT`, `SUM`) and `JOIN` operations connecting guests to bookings.
+* **[Lian Alanazi](https://github.com/Lian2030) (Contributor):**
+  * Seeded comprehensive sample data for ancillary hotel services and guest records.
+  * Implemented subqueries for tracking guest bookings.
+* **Shahad Mohammed (Contributor):**
+  * Handled sample data insertions for room allocations and booking periods.
+  * Created database views (`Available_Rooms`) for streamlined room status reporting
+* **Shamayil Khalid (Contributor):**
+  * Created the main database (`HotelManagementSystem`) and foundational tables (`GUEST`, `BOOKING`) with primary and foreign key constraints.
+  * Developed the initial availability filtering query.
