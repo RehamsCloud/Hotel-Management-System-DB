@@ -24,6 +24,25 @@ The relational model consists of the following tables:
 
 ---
 
+## 📐 Database Architecture & Design
+### 1. Entity-Relationship Diagram (ERD)
+The ER Diagram defines the conceptual model of the Hotel Management System, illustrating entity sets (`GUEST`, `BOOKING`, `ROOM`, `SERVICE`, `REQUEST`) and their relationships along with cardinalities.
+
+<p align="center">
+  <img src="images/er-diagram.png" width="700" alt="ER Diagram">
+</p>
+
+---
+
+### 2. Relational Schema
+The relational schema represents the logical structure after normalization, highlighting Primary Keys (underlined) and Foreign Key mappings across all entities.
+
+<p align="center">
+  <img src="images/relational-schema.png" width="700" alt="Relational Schema">
+</p>
+
+---
+
 ## 💻 SQL Features Included
 * **DDL (Data Definition Language):** Table creation with `PRIMARY KEY`, `FOREIGN KEY`, `DEFAULT`, and `CHECK` constraints.
 * **DML (Data Manipulation Language):** Sample data insertions for guests, rooms, bookings, and service requests.
