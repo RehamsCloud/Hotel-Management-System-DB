@@ -1,6 +1,5 @@
 /* 
-Database 
-Section:2 
+Database Project
 Shamayil Khalid - 44610372 
 Reham Hussein - 446017138
 Lian Alanazi - 446009851 
