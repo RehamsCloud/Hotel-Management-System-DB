@@ -72,6 +72,6 @@ The relational schema represents the logical structure after normalization, high
 * **Shahad Mohammed (Contributor):**
   * Handled sample data insertions for room allocations and booking periods.
   * Created database views (`Available_Rooms`) for streamlined room status reporting
-* **Shamayil Khalid (Contributor):**
+* **[Shamayil Khalid](https://github.com/shamayilkhoj) (Contributor):**
   * Created the main database (`HotelManagementSystem`) and foundational tables (`GUEST`, `BOOKING`) with primary and foreign key constraints.
   * Developed the initial availability filtering query.
